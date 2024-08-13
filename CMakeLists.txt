@@ -14,3 +14,11 @@ add_executable(FactoryMethod
 
 add_executable(AbstractFactory
         FactoryPattern/AbstractFactory.cpp)
+
+
+add_executable(SingletonPattern
+        SingletonPattern/TreasureTown.cpp
+        SingletonPattern/TaskBoard.cpp
+        SingletonPattern/ExpeditionTeam.cpp
+        SingletonPattern/HelpSeeker.cpp
+)

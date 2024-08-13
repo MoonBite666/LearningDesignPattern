@@ -21,7 +21,7 @@ public:
 };
 
 int main() {
-    std::shared_ptr<Programmer> programmer = Department::createProgramer();
+    auto programmer = Department::createProgramer();
     programmer->code();
     return 0;
 }
