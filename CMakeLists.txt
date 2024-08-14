@@ -22,3 +22,10 @@ add_executable(SingletonPattern
         SingletonPattern/ExpeditionTeam.cpp
         SingletonPattern/HelpSeeker.cpp
 )
+
+add_executable(BuilderPattern
+        BuilderPattern/TreasureEatery.cpp
+        BuilderPattern/Meals.cpp
+        BuilderPattern/Menus.cpp
+        BuilderPattern/MenuBuilders.cpp
+)
