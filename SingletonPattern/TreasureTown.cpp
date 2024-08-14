@@ -5,6 +5,13 @@
 #include "ExpeditionTeam.h"
 #include "HelpSeeker.h"
 
+int randid() {
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dis(1,100);
+    return dis(gen);
+}
+
 int main() {
     ExpeditionTeam team1("LoveFromEevees", 4);
     ExpeditionTeam team2("RazorWind", 3);
@@ -14,18 +21,16 @@ int main() {
     HelpSeeker pm2("Poochyena");
 
 
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<> dis(1,100);
+
     std::thread producer_th1([&] {
         for (int i = 0; i < 50; i++) {
-            pm1.sendTask(dis(gen));
+            pm1.sendTask(randid());
             std::this_thread::sleep_for(std::chrono::seconds(1));
         }
     });
     std::thread producer_th2([&] {
         for (int i = 0; i < 50; i++) {
-            pm2.sendTask(dis(gen));
+            pm2.sendTask(randid());
             std::this_thread::sleep_for(std::chrono::seconds(1));
         }
     });

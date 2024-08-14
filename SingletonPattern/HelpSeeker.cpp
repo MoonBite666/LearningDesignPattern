@@ -10,5 +10,5 @@ HelpSeeker::HelpSeeker(const std::string &name) : _name(name){
 
 void HelpSeeker::sendTask(int id) const {
     _taskBoard->addTask(id);
-    std::cout << "Pokemon " << _name << " added a request! ID: " << id << std::endl;
+    std::cout << std::endl << "Pokemon " << _name << " added a request! ID: " << id << std::endl;
 }

@@ -18,13 +18,13 @@ void ExpeditionTeam::startWorking() {
 
 void ExpeditionTeam::getTask() {
     if(!_taskBoard->isEmpty()) {
-        std::cout << "Task ID: " << _taskBoard->getTask() << " taken by " << "Team " << _name << std::endl;
+        std::cout << std::endl << "Task ID: " << _taskBoard->getTask() << " taken by " << "Team " << _name << std::endl;
         _taskBoard->popTask();
     }
 }
 
 void ExpeditionTeam::solveTask() {
     std::this_thread::sleep_for(std::chrono::seconds(_solveTime));
-    std::cout << "Task solved by Team " << _name << " with " << _solveTime << "sec." <<std::endl;
+    std::cout << std::endl << "Task solved by Team " << _name << " with " << _solveTime << "sec." <<std::endl;
 }
 
