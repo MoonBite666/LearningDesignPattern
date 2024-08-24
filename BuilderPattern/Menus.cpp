@@ -1,6 +1,15 @@
 #include "Menus.h"
+
+#include <codecvt>
+
 #include "Meals.h"
 #include <iostream>
+#include <locale>
+
+std::wstring stringToWstring(const std::string& str) {
+    std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;
+    return converter.from_bytes(str);
+}
 
 std::string enumToString(MealPowers value) {
     switch (value) {
@@ -73,8 +82,8 @@ std::string enumToString(PokemonType value) {
     }
 }
 
-void NormalMenu::addMeal(NormalMeal meal) {
-    _meal_list.push_back(meal);
+void NormalMenu::addMeal(NormalMeal* meal) {
+    _meal_list.push_back(*meal);
 }
 
 int NormalMenu::getCost() {
@@ -86,21 +95,21 @@ int NormalMenu::getCost() {
 }
 
 void NormalMenu::showInfo() {
-    std::cout << "-----------菜单-----------";
+    std::wcout << "-----------菜单-----------";
     for (auto meal: _meal_list) {
-        std::cout << std::endl;
+        std::wcout << std::endl;
         auto mealpowers = meal.getMealPowers();
-        std::cout << "\t餐点：" << meal.getName() << std::endl;
-        std::cout << "\t食力效果：" << std::endl;
+        std::wcout << L"\t餐点：" << stringToWstring(meal.getName()) << std::endl;
+        std::wcout << L"\t食力效果：" << std::endl;
         for(auto mealpower : mealpowers) {
-            std::cout << enumToString(mealpower.first.first) << " " << mealpower.second << " 级" << std::endl;
+            std::wcout << stringToWstring(enumToString(mealpower.first.first)) << " " << mealpower.second << " 级" << std::endl;
         }
     }
-    std::cout << "--------------------------";
+    std::wcout << "--------------------------";
 }
 
-void GymMenu::addMeal(GymMeal meal) {
-    _meal_list.push_back(meal);
+void GymMenu::addMeal(GymMeal* meal) {
+    _meal_list.push_back(*meal);
 }
 
 bool GymMenu::isCorrect() {

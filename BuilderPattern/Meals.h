@@ -1,7 +1,7 @@
 #ifndef MEALS_H
 #define MEALS_H
+#include <map>
 #include <string>
-#include <unordered_map>
 
 enum class MealPowers {
     EggPower,
@@ -40,15 +40,15 @@ enum class PokemonType {
 
 class NormalMeal {
 public:
-    NormalMeal() = default;
+    NormalMeal();
     virtual ~NormalMeal() = default;
 
     virtual int getPrice();
     virtual const std::string& getName();
-    virtual const std::unordered_map<std::pair<MealPowers,PokemonType>,int>& getMealPowers();
+    virtual const std::map<std::pair<MealPowers,PokemonType>,int>& getMealPowers();
 
 protected:
-    std::unordered_map<std::pair<MealPowers,PokemonType>,int> _mealPower;
+    std::map<std::pair<MealPowers,PokemonType>,int> _mealPower;
     int _price;
     std::string _name;
 };
@@ -79,7 +79,7 @@ public:
 
 class GymMeal {
 public:
-    explicit GymMeal(const std::string& name&);
+    explicit GymMeal(const std::string& name);
     ~GymMeal() = default;
     const std::string& getName();
 
