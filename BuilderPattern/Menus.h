@@ -6,7 +6,7 @@ class NormalMeal;
 class NormalMenu {
 public:
     ~NormalMenu() = default;
-    void addMeal(NormalMeal meal);
+    void addMeal(NormalMeal* meal);
 
     int getCost();
     void showInfo();
@@ -20,7 +20,7 @@ class GymMeal;
 class GymMenu {
 public:
     ~GymMenu() = default;
-    void addMeal(GymMeal meal);
+    void addMeal(GymMeal* meal);
     bool isCorrect();
 private:
     std::list<GymMeal> _meal_list;

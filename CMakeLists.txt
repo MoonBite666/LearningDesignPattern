@@ -28,4 +28,19 @@ add_executable(BuilderPattern
         BuilderPattern/Meals.cpp
         BuilderPattern/Menus.cpp
         BuilderPattern/MenuBuilders.cpp
+        BuilderPattern/Waiter.cpp
+)
+
+add_executable(PrototypePattern
+        PrototypePattern/Map.cpp
+        PrototypePattern/Map.h
+        PrototypePattern/Enemy.cpp
+        PrototypePattern/Chest.cpp
+        PrototypePattern/Game.cpp
+)
+
+add_executable(AdapterPattern
+        AdapterPattern/MediaPlayer.cpp
+        AdapterPattern/MediaPlayer.h
+        AdapterPattern/Software.cpp
 )
