@@ -13,6 +13,7 @@
 - [x] 建造者模式
 - [x] 原型模式 [笔记](https://mfnest.tech/%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e5%ad%a6%e4%b9%a0-%e5%8e%9f%e5%9e%8b%e6%a8%a1%e5%bc%8f/)
 - [x] 适配器模式 [笔记](https://mfnest.tech/%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e5%ad%a6%e4%b9%a0-%e9%80%82%e9%85%8d%e5%99%a8%e6%a8%a1%e5%bc%8f/)
+- [x] 桥接模式 [笔记](https://mfnest.tech/%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e5%ad%a6%e4%b9%a0-%e6%a1%a5%e6%8e%a5%e6%a8%a1%e5%bc%8f/)
 
 ## 致谢
 - Bilibili UP主：[EfficLab实验室](https://space.bilibili.com/5953240)

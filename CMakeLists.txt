@@ -44,3 +44,13 @@ add_executable(AdapterPattern
         AdapterPattern/MediaPlayer.h
         AdapterPattern/Software.cpp
 )
+
+add_executable(BridgePattern
+        BridgePattern/Maimai.cpp
+        BridgePattern/Note.cpp
+        BridgePattern/Note.h
+        BridgePattern/Shape.cpp
+        BridgePattern/Shape.h
+        BridgePattern/Pattern.cpp
+        BridgePattern/Pattern.h
+)
