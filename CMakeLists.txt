@@ -54,3 +54,18 @@ add_executable(BridgePattern
         BridgePattern/Pattern.cpp
         BridgePattern/Pattern.h
 )
+
+add_executable(CompositePattern
+        CompositePattern/GUISoftware.cpp
+        CompositePattern/GWindow.cpp
+        CompositePattern/GWindow.h
+        CompositePattern/GLable.cpp
+        CompositePattern/GLable.h
+        CompositePattern/GHLayout.cpp
+        CompositePattern/GVLayout.cpp
+        CompositePattern/GVLayout.h
+        CompositePattern/GObject.cpp
+        CompositePattern/GObject.h
+        CompositePattern/GHLayout.h
+
+)
