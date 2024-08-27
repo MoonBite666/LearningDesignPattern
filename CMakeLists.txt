@@ -69,3 +69,20 @@ add_executable(CompositePattern
         CompositePattern/GHLayout.h
 
 )
+
+add_executable(DecoratorPattern
+        DecoratorPattern/Madeline.cpp
+        DecoratorPattern/Madeline.h
+        DecoratorPattern/Badeline.cpp
+        DecoratorPattern/Badeline.h
+        DecoratorPattern/Core.cpp
+        DecoratorPattern/Core.h
+        DecoratorPattern/Celeste.cpp
+        DecoratorPattern/Player.cpp
+        DecoratorPattern/Player.h
+        DecoratorPattern/Eevee.cpp
+        DecoratorPattern/Eevee.h
+        DecoratorPattern/PlayerDecorator.cpp
+        DecoratorPattern/PlayerDecorator.h
+
+)
