@@ -17,6 +17,7 @@
 - [x] 适配器模式 [笔记](https://mfnest.tech/%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e5%ad%a6%e4%b9%a0-%e9%80%82%e9%85%8d%e5%99%a8%e6%a8%a1%e5%bc%8f/)
 - [x] 桥接模式 [笔记](https://mfnest.tech/%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e5%ad%a6%e4%b9%a0-%e6%a1%a5%e6%8e%a5%e6%a8%a1%e5%bc%8f/)
 - [x] 组合模式 [笔记](https://mfnest.tech/%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e5%ad%a6%e4%b9%a0-%e7%bb%84%e5%90%88%e6%a8%a1%e5%bc%8f/)
+- [x] 装饰器模式 [笔记](https://mfnest.tech/%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f%e5%ad%a6%e4%b9%a0-%e8%a3%85%e9%a5%b0%e5%99%a8%e6%a8%a1%e5%bc%8f/)
 
 ## 致谢
 - Bilibili UP主：[EfficLab实验室](https://space.bilibili.com/5953240)
